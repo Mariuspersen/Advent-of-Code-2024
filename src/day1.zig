@@ -32,7 +32,7 @@ pub fn main() !void {
     for (left.items, right.items) |l,r| {
         acc += if (l > r) l - r else r - l;
     }
-    
+
     var acc_part2: i32 = 0;
     var count_part2: i32 = 0;
     for (left.items) |l| {
@@ -43,7 +43,7 @@ pub fn main() !void {
         count_part2 = 0;
     }
 
-    std.debug.print("Part 1: {d}\n", .{acc});
-    std.debug.print("Part 2: {d}\n", .{acc_part2});
+    std.debug.print("Day 1 Part 1: {d}\n", .{acc});
+    std.debug.print("Day 1 Part 2: {d}\n", .{acc_part2});
 
 }
